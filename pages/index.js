@@ -7,6 +7,7 @@ export default function Home() {
   const [number, setNumber] = useState(null);
   useEffect(() => {
     axios.get("http://numbersapi.com/random/trivia").then((res) => {
+      console.log(res.data)
       const list_of_strs = res.data.split(" ");
       setNumber(list_of_strs[0]);
       list_of_strs.shift();
