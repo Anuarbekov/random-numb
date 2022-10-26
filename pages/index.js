@@ -18,6 +18,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
         <title>Random Info about Number</title>
       </Head>
       <div className="glass">
